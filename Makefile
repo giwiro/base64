@@ -1,14 +1,13 @@
 CC = gcc
-CFLAGS = -Wall -Wextra
+CFLAGS = -Wall -Wextra -fstack-protector-strong
 TARGET = b64
 
-all: main unit_test
 
 dev: CFLAGS += -g -O0
-dev: all
+dev: main unit_test
 
 prod: CFLAGS += -O3 -DNDEBUG
-prod: all
+prod: main
 
 b64.o : base64.c base64.h
 	$(CC) $(CFLAGS) -c base64.c -o base64.o
