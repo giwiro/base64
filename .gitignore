@@ -17,3 +17,7 @@ vgcore.*
 # Local IDE / editor
 .idea/
 .vscode/
+
+# Binaries
+test
+b64
