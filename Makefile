@@ -2,6 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -fstack-protector-strong
 TARGET = b64
 
+all: prod
 
 dev: CFLAGS += -g -O0
 dev: main unit_test
