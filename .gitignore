@@ -1,0 +1,19 @@
+# Build artifacts (see Makefile: TARGET = base64)
+*.o
+*.out
+/base64
+
+# macOS: debug symbol bundle from `gcc -g`
+*.dSYM/
+
+# macOS
+.DS_Store
+
+# Core / sanitizer dumps
+core
+*.core
+vgcore.*
+
+# Local IDE / editor
+.idea/
+.vscode/
